@@ -9,3 +9,4 @@ export const BOARD_STATUS = [
 	BoardStatus.PR_REVIEW.value,
 	BoardStatus.DONE.value,
 ];
+export const PRIORITY = [1, 2, 3, 4];

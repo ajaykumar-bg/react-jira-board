@@ -1,7 +1,7 @@
 import React from 'react';
 import { Column } from './Column';
 import { DraggableCard } from './Card';
-import { TextForm } from './TextForm';
+import TextForm from './TextForm';
 
 export function Board({ cards, columns, moveCard, addCard, addColumn }) {
 	return (

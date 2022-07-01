@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextForm } from './TextForm';
+import TextForm from './TextForm';
 
 export function Column(props) {
 	return (

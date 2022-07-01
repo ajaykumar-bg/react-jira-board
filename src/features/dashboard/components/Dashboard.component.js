@@ -4,16 +4,17 @@ import HTML5Backend from 'react-dnd-html5-backend';
 import _ from 'lodash';
 
 import { Board } from './Board.component';
+import { BOARD_STATUS } from '../../../core/constants/jira.constant';
 
 let _columnId = 0;
 let _cardId = 0;
 
-const initialCards = Array.from({ length: 9 }).map(() => ({
+const initialCards = Array.from({ length: 500 }).map(() => ({
 	id: ++_cardId,
 	title: `Card ${_cardId}`,
 }));
 
-const initialColumns = ['TODO', 'Doing', 'Done'].map((title, i) => ({
+const initialColumns = BOARD_STATUS.map((title, i) => ({
 	id: _columnId++,
 	title,
 	cardIds: initialCards.slice(i * 3, i * 3 + 3).map((card) => card.id),
